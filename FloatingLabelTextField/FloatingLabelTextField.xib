@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FloatingLabelTextField" customModule="FloatingLabelTextField" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomSeparator" destination="pRC-LK-eu5" id="JSf-i9-dZo"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="n7V-Lh-cwd"/>
+                <outlet property="placeholderLabel" destination="y4o-pJ-0Mc" id="BZa-Eu-3Bh"/>
+                <outlet property="textfield" destination="9dm-Ob-gOy" id="flR-tk-jzB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="157"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Placeholder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9dm-Ob-gOy">
+                    <rect key="frame" x="0.0" y="21" width="314" height="127"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4o-pJ-0Mc">
+                    <rect key="frame" x="0.0" y="0.0" width="314" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRC-LK-eu5" userLabel="SeparatorView">
+                    <rect key="frame" x="0.0" y="156" width="314" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="1Vp-RT-G0Z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="y4o-pJ-0Mc" secondAttribute="trailing" id="BDv-LU-usE"/>
+                <constraint firstItem="pRC-LK-eu5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="K7p-rV-LuY"/>
+                <constraint firstItem="9dm-Ob-gOy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Nai-QA-ISj"/>
+                <constraint firstItem="9dm-Ob-gOy" firstAttribute="top" secondItem="y4o-pJ-0Mc" secondAttribute="bottom" constant="0.5" id="Qp2-x3-qVP"/>
+                <constraint firstItem="9dm-Ob-gOy" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="UQG-zH-DZV"/>
+                <constraint firstItem="pRC-LK-eu5" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="hHL-SV-3NS"/>
+                <constraint firstItem="pRC-LK-eu5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hO7-2e-Uxe"/>
+                <constraint firstAttribute="trailing" secondItem="pRC-LK-eu5" secondAttribute="trailing" id="hzt-SA-5lv"/>
+                <constraint firstItem="y4o-pJ-0Mc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="k2p-aH-4CN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pRC-LK-eu5" secondAttribute="bottom" id="kqO-xA-6Qp"/>
+                <constraint firstItem="y4o-pJ-0Mc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ng0-X2-OOF"/>
+                <constraint firstItem="pRC-LK-eu5" firstAttribute="top" secondItem="9dm-Ob-gOy" secondAttribute="bottom" constant="8" id="rfv-tW-FUw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="65.217391304347828" y="-133.59375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
