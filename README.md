@@ -1,6 +1,6 @@
 # FloatingLabelTextField
 
-`FloatingLabelTextField` is a beautiful, flexible and customizable implementation of the space saving "Float Label Pattern". It is inspired from `SkyFloatingLabelTextField`
+`FloatingLabelTextField` is a simple and flexible implementation of the space saving "Float Label Pattern". It is inspired from `SkyFloatingLabelTextField`
 
 
 https://user-images.githubusercontent.com/25341882/149515028-4f879b86-8376-4011-8a5a-35d027d36570.mp4
